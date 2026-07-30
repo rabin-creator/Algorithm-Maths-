@@ -3,19 +3,21 @@
     <head> </head>
 
         <meta charset="UTF-8">
-        <meta name =" viewport" content="width=devie-width, initial scale=1.0">
+        <meta name =" viewport" content="width=device-width, initial-scale=1.0">
         <title>Day2</title>
 </head>
 <body>
-    <h1>Welcome to Html</h1>
+    <h1>Welcome to HtML</h1>
     <h2>This is heading 2</h2>
     <h3>This is heading 3</h3>
     <p> 
-        My name is Rabin Kunar DC.
-        I am a computer engineering student and i'am in 4th semester right now.
-        I read in Far western unversity.
+        My name is Rabin Kumar DC.
+        I am a computer engineering student and i'm in 4th semester right now.
+        I read in Far western Unversity.
         I am learning web development.  
     </p>
-    <p> i am learning web develop ment for developing beacause i feel thus is a cool stuff and usefultoo. </p>
+    <p> I am learning web development because 
+    I think it is a useful and interesting skill. I want to build websites 
+    and improve my programming knowledge. </p>
 </body>
         </html>
