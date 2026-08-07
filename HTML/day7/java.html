@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The basics</title>
+</head>
+<body>
+    <h1 id="title" style="color:aqua">hello</h1>
+    
+    <button id="changeButton">Change text</button>
+
+    <script>
+        const title = document.getElementById("title");
+        const button = document.getElementById("changeButton");
+
+        button.addEventListener("mouseover", function()
+         {
+            title.innerHTML  ="<h2>rabin mero bhai</h2>";
+        });
+        button.addEventListener("click",()=>{
+       title.style.color="yellow";      
+
+        });
+    </script>
+</body>
+</html>
