@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+
+<body>
+
+    <h1 id="title">Hello World</h1>
+
+    <p class="message">I am learning JavaScript.</p>
+
+    <script>
+        let heading = document.querySelector("#title");
+        let paragraph = document.querySelector(".message");
+
+        heading.innerText = "DOM is becoming easy!";
+        paragraph.innerText = "I can select HTML elements.";
+    </script>
+
+</body>
+</html>
