@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="demo">Hello DOM!</p>
+  <button onclick="changeText()">Click Me</button>
+
+  <script>
+    function changeText() {
+      document.getElementById("demo").innerHTML = "Text changed!";
+      document.getElementById("demo").style.color = "blue";
+    }
+  </script>
+</body>
+</html>
