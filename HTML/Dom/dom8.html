@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1 id="title">Hello World</h1>
+
+    <button id="btn">Change Text</button>
+
+    <script>
+
+        let heading = document.getElementById("title");
+        let button = document.getElementById("btn");
+
+        button.addEventListener("click", function() {
+
+            heading.innerText = "You clicked the button!";
+
+        });
+
+    </script>
+
+</body>
+</html>
