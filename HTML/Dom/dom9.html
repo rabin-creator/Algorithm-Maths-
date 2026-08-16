@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Practice</title>
+</head>
+
+<body>
+
+    <input id="nameInput" type="text" placeholder="Enter your name">
+
+    <h2 id="output"></h2>
+
+    <script>
+
+        let input = document.getElementById("nameInput");
+        let output = document.getElementById("output");
+
+        input.addEventListener("input", function() {
+            output.innerText = input.value;
+        });
+
+    </script>
+
+</body>
+</html>
