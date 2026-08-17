@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .active {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="title">Hello World</h1>
+
+    <button id="btn">Change Style</button>
+
+    <script>
+
+        let title = document.getElementById("title");
+        let button = document.getElementById("btn");
+
+        button.addEventListener("click", function() {
+            title.classList.toggle("active");
+        });
+
+    </script>
+
+</body>
+</html>
