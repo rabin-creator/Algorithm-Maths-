@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+</head>
+
+<body>
+
+    <h1>Registration</h1>
+
+    <form id="myForm">
+
+        <input
+            id="username"
+            type="text"
+            placeholder="Enter your name"
+        >
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <h2 id="result"></h2>
+
+
+    <script>
+
+        let form = document.getElementById("myForm");
+        let username = document.getElementById("username");
+        let result = document.getElementById("result");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            result.innerText = "Hello " + username.value;
+
+        });
+
+    </script>
+
+</body>
+
+</html>
