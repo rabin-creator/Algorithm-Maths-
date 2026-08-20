@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textContent vs innerText</title>
+
+    <style>
+        #hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">Old Title</h1>
+
+    <div id="box">
+        Hello
+        <span id="hidden">Hidden Text</span>
+    </div>
+
+    <button id="innerBtn">Use innerText</button>
+    <button id="textBtn">Use textContent</button>
+
+    <script>
+
+        let title = document.getElementById("title");
+        let box = document.getElementById("box");
+
+        let innerBtn = document.getElementById("innerBtn");
+        let textBtn = document.getElementById("textBtn");
+
+
+        innerBtn.addEventListener("click", function() {
+
+            title.innerText = "Changed using innerText";
+
+            console.log("innerText:");
+            console.log(box.innerText);
+
+        });
+
+
+        textBtn.addEventListener("click", function() {
+
+            title.textContent = "Changed using textContent";
+
+            console.log("textContent:");
+            console.log(box.textContent);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
