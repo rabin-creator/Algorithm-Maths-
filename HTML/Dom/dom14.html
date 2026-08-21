@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append and Prepend</title>
+</head>
+
+<body>
+
+    <div id="box">
+        <p>Middle</p>
+    </div>
+
+    <button id="addEnd">Add at End</button>
+    <button id="addStart">Add at Start</button>
+
+    <script>
+
+        let box = document.getElementById("box");
+
+        let endButton = document.getElementById("addEnd");
+        let startButton = document.getElementById("addStart");
+
+
+        endButton.addEventListener("click", function() {
+
+            let paragraph = document.createElement("p");
+
+            paragraph.innerText = "Added at the end";
+
+            box.append(paragraph);
+
+        });
+
+
+        startButton.addEventListener("click", function() {
+
+            let paragraph = document.createElement("p");
+
+            paragraph.innerText = "Added at the beginning";
+
+            box.prepend(paragraph);
+
+        });
+
+    </script>
+
+</body>
+</html>
