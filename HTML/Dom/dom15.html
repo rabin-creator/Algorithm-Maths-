@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+
+<body>
+
+    <img
+        id="photo"
+        src="https://picsum.photos/200"
+        alt="Random image"
+    >
+
+    <br><br>
+
+    <button id="changeBtn">Change Image</button>
+
+    <script>
+
+        let photo = document.getElementById("photo");
+        let button = document.getElementById("changeBtn");
+
+        button.addEventListener("click", function() {
+
+            photo.setAttribute(
+                "src",
+                "https://picsum.photos/300"
+            );
+
+        });
+
+    </script>
+
+</body>
+
+</html>
