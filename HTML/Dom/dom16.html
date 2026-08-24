@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal</title>
+</head>
+
+<body>
+
+    <div id="box">
+
+        <h1 id="one">One</h1>
+        <p id="two">Two</p>
+        <button id="three">Three</button>
+
+    </div>
+
+    <script>
+
+        let box = document.getElementById("box");
+
+        console.log(box.children);
+
+        console.log(box.firstElementChild);
+
+        console.log(box.lastElementChild);
+
+
+        let one = document.getElementById("one");
+
+        console.log(one.parentElement);
+
+        console.log(one.nextElementSibling);
+
+
+        let two = document.getElementById("two");
+
+        console.log(two.previousElementSibling);
+
+    </script>
+
+</body>
+
+</html>
