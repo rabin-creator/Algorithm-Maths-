@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Example</title>
+</head>
+
+<body>
+
+    <form id="form">
+
+        <input
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+        >
+
+        <button>Submit</button>
+
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script>
+
+        let form = document.getElementById("form");
+        let nameInput = document.getElementById("name");
+        let result = document.getElementById("result");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            result.innerText = "Hello " + nameInput.value;
+
+        });
+
+    </script>
+
+</body>
+
+</html>
