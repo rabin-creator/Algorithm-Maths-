@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>ClassList Practice</title>
+
+    <style>
+
+        .red {
+            color: red;
+        }
+
+        .big {
+            font-size: 50px;
+        }
+
+        .dark {
+            background: black;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="title">Hello World</h1>
+
+    <button id="redBtn">Red</button>
+
+    <button id="sizeBtn">Big</button>
+
+    <button id="darkBtn">Dark Mode</button>
+
+    <script>
+
+        let title = document.getElementById("title");
+
+        let redBtn = document.getElementById("redBtn");
+        let sizeBtn = document.getElementById("sizeBtn");
+        let darkBtn = document.getElementById("darkBtn");
+
+
+        redBtn.addEventListener("click", function() {
+
+            title.classList.toggle("red");
+
+        });
+
+
+        sizeBtn.addEventListener("click", function() {
+
+            title.classList.toggle("big");
+
+        });
+
+
+        darkBtn.addEventListener("click", function() {
+
+            document.body.classList.toggle("dark");
+
+        });
+
+    </script>
+
+</body>
+
+</html>
