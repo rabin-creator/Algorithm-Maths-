@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dynamic List</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>My Dynamic List</h1>
+
+    <button id="addBtn">Add Item</button>
+
+    <ul id="list"></ul>
+
+
+    <script>
+
+        let button = document.getElementById("addBtn");
+        let list = document.getElementById("list");
+
+        let count = 0;
+
+
+        button.addEventListener("click", function() {
+
+            count++;
+
+            let item = document.createElement("li");
+
+            item.innerText = "Item " + count;
+
+            list.appendChild(item);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
