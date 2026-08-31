@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Basics</title>
+  <style>
+    .highlight { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-heading">Hello, DOM!</h1>
+  <p class="description">This is a paragraph.</p>
+  <button id="btn">Click Me</button>
+
+  <script>
+    // 1. Select
+    const heading = document.querySelector('#main-heading');
+    const button = document.querySelector('#btn');
+
+    // 2. Event Listener & 3. Change Content/Style
+    button.addEventListener('click', function() {
+      heading.textContent = "You clicked the button!";
+      heading.classList.toggle('highlight');
+    });
+  </script>
+
+</body>
+</html>
